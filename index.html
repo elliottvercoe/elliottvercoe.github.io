@@ -1,1 +1,27 @@
-Hello World
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Elliott Vercoe - Projects, Portfolio and Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type = "text/css" href="mystyle.css">
+</head>
+<body>
+
+<div class="sidenav">
+  <a href="{% url 'index' %}">About Me</a>
+  <a href="{% url 'professional' %}">Professional Experience</a>
+  <a href="{% url 'projects' %}">Projects</a>
+  <a href="{% url 'personal' %}">Personal</a>
+  <a href="{% url 'contact' %}">Contact</a>
+</div>
+
+<div class="main">
+  <h1>About Me</h1>
+  <p>My name is Elliott Vercoe.</p>
+  <p>I currently work at CSIRO's Data61 as a software engineer. Check out the professional experience page for more info.</p>
+  <p>I like climbing, running and cycling.</p>
+  <p>Contact me at <a href=""mailto: elliott.vercoe@gmail.com>elliott.vercoe@gmail.com</a></p>
+</div>
+
+</body>
+</html>
