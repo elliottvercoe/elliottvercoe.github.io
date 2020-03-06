@@ -17,10 +17,40 @@
 
 <div class="main">
   <h1>Projects</h1>
-  <h2>BiDirectional Classifying Generative Adversarial Networks</h2>
-  <p>To be completed...</p>
-  <a href="Elliott_Vercoe_Research_Project_20191213.pdf">Link to paper</a>
-
+  <h2>BiDirectional Classifying Generative Adversarial Networks (BiCGAN)</h2>
+  <p>BiCGAN was a research project completed as the capstone for my Masters in Information Technology from UNSW in
+    2019. My project supervisor was Dr Alan Blair.</p>
+  <p>BiCGAN consists of a modification to the existing BiGAN (or Adversarially Learned Inference)
+    which involves the application of a Generator, Encoder and Discriminator network to generate
+    synthetic data samples, by optimizing a minimax game. A novel Classifier component has been
+    introduced, allowing the generation of data samples satisfying the properties of some given
+    class.
+  <p>
+    In the process of implementing the new Classifier, several extensions were made to the BiGAN
+    network structure by implementing new loss functions. Additionally, novel strategies for data
+    generation policies were explored and reported on.
+  </p>
+  <p>
+    The BiCGAN was applied to the UCI Sonar Dataset. When tested with 10-fold cross validation,
+    the BiCGAN was able to generate data samples that allowed a fresh neural network to be trained
+    to achieve 73 % accuracy, compared to an 83 % control test that was achieved when using the
+    original, unmodified data samples.
+  </p>
+  <p>
+    The BiCGAN was applied to the Credit Card Dataset, a heavily imbalanced dataset with a class
+    ratio of approximately 500:1. The BiCGAN was able to generate data samples that allowed a
+    fresh neural network to be trained to achieve a performance of 0.744 precision and 0.592 recall,
+    compared to 0.869 precision and 0.612 recall that was achieved using the original, unmodified
+    data samples as a control test.</p>
+  <p>
+    <a href="Elliott_Vercoe_Research_Project_20191213.pdf">Link to paper</a>
+  </p>
+  <div>
+    <img src="bicgan.png">
+  </div>
+  <div>
+    <img src="encoded_decoded.png">
+  </div>
 </div>
 
 </body>
