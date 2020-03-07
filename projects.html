@@ -1,57 +1,90 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Elliott Vercoe - Projects, Portfolio and Blog</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type = "text/css" href="mystyle.css">
-</head>
-<body>
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Projects</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<div class="sidenav">
-  <a href="index.html">About Me</a>
-  <a href="professional.html">Professional Experience</a>
-  <a href="projects.html">Projects</a>
-  <a href="personal.html">Personal</a>
-  <a href="contact.html">Contact</a>
-</div>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+		
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+		
+		<div class="wrapper d-flex align-items-stretch">
+			<nav id="sidebar">
+				<div class="custom-menu">
+					<button type="button" id="sidebarCollapse" class="btn btn-primary">
+	        </button>
+        </div>
+	  		<div class="img bg-wrap text-center py-4" style="background-image: url(images/nepal.JPG);">
+	  			<div class="user-logo">
+	  				<div class="img" style="background-image: url(images/profile_headshot.png);"></div>
+	  				<h3>Elliott Vercoe</h3>
+	  			</div>
+	  		</div>
+        <ul class="list-unstyled components mb-5">
+          <li>
+            <a href="index.html"><span class="fa fa-home mr-3"></span> Home</a>
+          </li>
+          <li>
+            <a href="professional.html"><span class="fa fa-black-tie mr-3"></span> Professional Experience</a>
+          </li>
+          <li class="active">
+            <a href="projects.html"><span class="fa fa-trophy mr-3"></span> Projects</a>
+          </li>
+          <li>
+            <a href="personal.html"><span class="fa fa-camera mr-3"></span> Personal</a>
+          </li>
+            <li>
+                <a href="contact.html"><span class="fa fa-cog mr-3"></span> Contact</a>
+            </li>
+        </ul>
 
-<div class="main">
-  <h1>Projects</h1>
-  <h2>BiDirectional Classifying Generative Adversarial Networks (BiCGAN)</h2>
-  <p>BiCGAN was a research project completed as the capstone for my Masters in Information Technology from UNSW in
-    2019. My project supervisor was Dr Alan Blair.</p>
-  <p>BiCGAN consists of a modification to the existing BiGAN (or Adversarially Learned Inference)
-    which involves the application of a Generator, Encoder and Discriminator network to generate
-    synthetic data samples, by optimizing a minimax game. A novel Classifier component has been
-    introduced, allowing the generation of data samples satisfying the properties of some given
-    class.
-  <p>
-    In the process of implementing the new Classifier, several extensions were made to the BiGAN
-    network structure by implementing new loss functions. Additionally, novel strategies for data
-    generation policies were explored and reported on.
-  </p>
-  <p>
-    The BiCGAN was applied to the UCI Sonar Dataset. When tested with 10-fold cross validation,
-    the BiCGAN was able to generate data samples that allowed a fresh neural network to be trained
-    to achieve 73 % accuracy, compared to an 83 % control test that was achieved when using the
-    original, unmodified data samples.
-  </p>
-  <p>
-    The BiCGAN was applied to the Credit Card Dataset, a heavily imbalanced dataset with a class
-    ratio of approximately 500:1. The BiCGAN was able to generate data samples that allowed a
-    fresh neural network to be trained to achieve a performance of 0.744 precision and 0.592 recall,
-    compared to 0.869 precision and 0.612 recall that was achieved using the original, unmodified
-    data samples as a control test.</p>
-  <p>
-    <a href="Elliott_Vercoe_Research_Project_20191213.pdf">Link to paper</a>
-  </p>
-  <div>
-    <img src="bicgan.png">
-  </div>
-  <div>
-    <img src="encoded_decoded.png">
-  </div>
-</div>
+    	</nav>
 
-</body>
+        <!-- Page Content  -->
+      <div id="content" class="p-4 p-md-5 pt-5">
+          <h2>BiDirectional Classifying Generative Adversarial Networks (BiCGAN)</h2>
+          <p>BiCGAN was a research project completed as the capstone for my Masters in Information Technology from UNSW in
+              2019. My project supervisor was Dr Alan Blair.</p>
+          <p>BiCGAN consists of a modification to the existing BiGAN (or Adversarially Learned Inference)
+              which involves the application of a Generator, Encoder and Discriminator network to generate
+              synthetic data samples, by optimizing a minimax game. A novel Classifier component has been
+              introduced, allowing the generation of data samples satisfying the properties of some given
+              class.
+          <p>
+              In the process of implementing the new Classifier, several extensions were made to the BiGAN
+              network structure by implementing new loss functions. Additionally, novel strategies for data
+              generation policies were explored and reported on.
+          </p>
+          <p>
+              The BiCGAN was applied to the UCI Sonar Dataset. When tested with 10-fold cross validation,
+              the BiCGAN was able to generate data samples that allowed a fresh neural network to be trained
+              to achieve 73 % accuracy, compared to an 83 % control test that was achieved when using the
+              original, unmodified data samples.
+          </p>
+          <p>
+              The BiCGAN was applied to the Credit Card Dataset, a heavily imbalanced dataset with a class
+              ratio of approximately 500:1. The BiCGAN was able to generate data samples that allowed a
+              fresh neural network to be trained to achieve a performance of 0.744 precision and 0.592 recall,
+              compared to 0.869 precision and 0.612 recall that was achieved using the original, unmodified
+              data samples as a control test.</p>
+          <p>
+              <a href="Elliott_Vercoe_Research_Project_20191213.pdf">Link to paper</a>
+          </p>
+          <div>
+              <img src="images/bicgan.png">
+          </div>
+          <div>
+              <img src="images/encoded_decoded.png">
+          </div>
+      </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
