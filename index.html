@@ -1,6 +1,22 @@
 <!doctype html>
 <html lang="en">
   <head>
+  <style>
+  .video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio (h/w * 100) */
+    overflow: hidden;
+  }
+  
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+</style>
   	<title>Home</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -55,7 +71,9 @@
           <p>Download my resume <a href="Elliott%20Vercoe%20-%20Resume.pdf">here</a> (last updated August 2022).</p>
 		  <p>I enjoy climbing, mountaineering, hiking and cycle touring. I am building out some blog posts and guides to post to this site.</p>
           <p>Contact me at <a href=""mailto: elliott.vercoe@gmail.com>elliott.vercoe@gmail.com</a></p>
-		  <iframe width="560" height="315" src="https://www.youtube.com/embed/Zvl85Cq8H2s?si=1K4a5Og5IHJnqUcX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+		  <div class="video-container">
+  <iframe src="https://www.youtube.com/embed/Zvl85Cq8H2s?si=1K4a5Og5IHJnqUcX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
       </div>
 
     <script src="js/jquery.min.js"></script>
