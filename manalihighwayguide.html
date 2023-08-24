@@ -26,9 +26,63 @@
 	  display: flex;
 	  justify-content: center;
 	  align-items: center;
+	    max-width: 100%; /* Set maximum width */
+  overflow-x: auto; /* Add horizontal scrollbar if content overflows */
 	}
 	
 	.c80{background-color:#f4ad6c}.c62{background-color:#6bbe86}.c61{background-color:#f5b26b}.c46{background-color:#57bb8a}.c77{background-color:#7bc083}.c29{height:27.8pt}.c28{height:11pt}.c59{background-color:#e2d16d}.c58{background-color:#e67c73}.c45{background-color:#fed366}.c83{background-color:#d1ce70}.c17{height:26.3pt}.c67{height:1.5pt}.c18{height:0pt}.c75{background-color:#fbc868}.c76{background-color:#7cc182}.c57{background-color:#ffd466}.c49{height:6pt}.c37{background-color:#b7e1cd}.c31{background-color:#84c281}.c63{background-color:#f1a36d}.c4{height:15.8pt}.c6{height:16.8pt}.c32{background-color:#ead26b}.c64{background-color:#f0d36a}.c50{background-color:#dbd06e}.c60{background-color:#fed166}.c40{background-color:#eb8e70}.c68{height:9.8pt}.c79{background-color:#f0a06d}.c74{background-color:#98c57c}.c54{height:4.5pt}.c38{background-color:#9fc67b}.c55{background-color:#f7b66a}.c51{height:8.2pt}.c66{height:11.2pt}.c48{background-color:#f6b66a}.c72{background-color:#f1d369}.c53{background-color:#ed956f}.c71{background-color:#67bd87}.c30{background-color:#7dc182}.c44{background-color:#66bd87}.c34{height:3.9pt}.c47{background-color:#ea8971}.c70{background-color:#fdcd67} .c16{background-color:#ffd666} 
+	
+    /* Style for the table of contents */
+    .table-of-contents {
+      background-color: #f2f2f2;
+      border: 1px solid #ccc;
+      padding: 10px;
+      width: auto;
+      max-width: 440px; /* Adjust as needed */
+    }
+    .table-of-contents ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    .table-of-contents li {
+      margin-left: 10px;
+    }
+    .table-of-contents a {
+      text-decoration: none;
+      color: #333;
+    }
+    /* Style for the main content */
+    .content {
+      margin-left: 240px; /* Adjust as needed */
+    }
+    h2 {
+      margin-top: 20px;
+    }
+	
+/* For phone screens and smaller */
+@media (max-width: 767px) {
+  img {
+    max-width: 100%; /* Image won't exceed its container's width */
+    height: auto;     /* Maintain image's aspect ratio */
+  }
+}
+
+/* For computer screens */
+@media (min-width: 768px) {
+  img {
+    max-width: 700px; /* Image will have a maximum width of 700px */
+    height: auto;     /* Maintain image's aspect ratio */
+  }
+}
+
+/* Apply this style for mobile screens */
+@media (max-width: 767px) {
+  table {
+    max-width: 100%; /* Set maximum width to the available screen width */
+    table-layout: fixed; /* Prevent table cells from expanding based on content */
+  }
+}
   </style>
 	
       <meta content="text/html; charset=UTF-8" http-equiv="content-type">
@@ -78,7 +132,31 @@
     	</nav>
 		<div id="content" class="p-4 p-md-5 pt-5">
       <h1>Manali Highway Bikepacking Guide</h2>
-      <h2 class="c22" id="h.8phvj3bk4bx3"><span class="c43">Preamble</span></h2>
+	  <div class="table-of-contents">
+		  <h3>Contents</h3>
+		  <ul>
+			<li><a href="#preamble">Preamble</a></li>
+			<li><a href="#route">Route</a></li>
+			<li><a href="#transport">Transport</a></li>
+			<li><a href="#time">Time of Year and Weather</a></li>
+			<li><a href="#phone">Phone Signal and Electronics</a></li>
+			<li><a href="#cost">Costs and Expenses</a></li>
+			<li><a href="#gear">Equipment Considerations</a></li>
+			<li><a href="#gearlist">Gear List</a></li>
+			<li><a href="#day1">Day 1) Manali to Mardhi</a></li>
+			<li><a href="#day2">Day 2) Mardhi to Sissu via Rohtang La</a></li>
+			<li><a href="#day3">Day 3) Sissu to Jispa</a></li>
+			<li><a href="#day4">Day 4) Jispa to Zing Zing Bar</a></li>
+			<li><a href="#day5">Day 5) Zing Zing Bar to Sarchu via Baralacha La</a></li>
+			<li><a href="#day6">Day 6) Sarchu to Whiskey Nala via Nakee La</a></li>
+			<li><a href="#day7">Day 7) Whiskey Nala to Debring via Lachung La</a></li>
+			<li><a href="#day8">Day 8) Debring to Upshii / Lato via Tanglang La</a></li>
+			<li><a href="#day9">Day 9) Upshii to Leh</a></li>
+			<li><a href="#day10">Day 10) Khardung La</a></li>
+		   
+		  </ul>
+		</div>
+      <h2 class="c22" id="preamble"><span class="c43">Preamble</span></h2>
       <p class="c10"><span class="c13">This guide is written to provide assistance to anyone attempting to cycle the Manali Highway. I am writing it to present information that would have been useful to me for my trip in June 2023, in order to save everyone else from trawling through outdated blogs and Reddit posts.</span></p>
       <p class="c2"><span class="c13"></span></p>
       <p class="c10"><span class="c13">The guide assumes familiarity with bike packing / cycle touring and with general outdoor skills. I would not cycle the Manali highway as a first unsupported cycle touring trip due to its remoteness and lack of bike / gear repair options, however it is appropriate for a first venture to high altitude. My personal experience includes 5 months previously spent in the Indian and Nepalese Himalayas over many trips and years, and about 4 months spent road cycle touring in New Zealand, Europe and Australia.</span></p>
@@ -87,9 +165,9 @@
       <p class="c2"><span class="c13"></span></p>
       <p class="c10"><span class="c13">The Indian government is currently building at least 1 additional tunnel, which will alter the route when it is open. This guide is accurate to June 2023 and the conditions and route will be changed over time. Older guides suggest that there are many river crossings and rough terrain; bridges and infrastructure have since been significantly developed and as of 2023 I was able to complete the route with my feet only getting wet once.</span></p>
       <p class="c2"><span class="c13"></span></p>
-      <p class="c3"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 694.74px; height: 377.17px;"><img alt="" src="images/image54.png" style="width: 694.74px; height: 522.56px; margin-left: 0.00px; margin-top: -145.39px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p>
+      <p class="c3"><img alt="" style="text-align: center;" src="images/image54.png" title=""></p>
       <p class="c3"><span>Fixing a cleat in the valley between Zing Zing Bar and Sarchu</span></p>
-      <h2 class="c22" id="h.vhs6eh855xu6"><span class="c43">Route</span></h2>
+      <h2 class="c22" id="route"><span class="c43">Route</span></h2>
       <p class="c10"><span class="c13">The Manali Highway joins the town of Manali to the town of Leh, running from Himachal Pradesh through to the Ladakh region of Jammu and Kashmir. Jammu and Kashmir is a semi-autonomous state of India, and borders both Pakistan and China. Both countries contest the location of the border, resulting in regular armed conflict and war. As such, Jammu and Kashmir is regarded as the most militarised zone in the world. There are frequent military bases and vehicles along the Manali highway representing a strong armed presence. This presence represents a development of infrastructure, as the military requires these roads to be trafficable at all times. This works out great for cyclists.</span></p>
       <p class="c2"><span class="c13"></span></p>
       <p class="c10"><span class="c13">Ladakh is the highest plateau in India with most of it being over 3000 m elevation, extending from the Himalayas to the Kunlun mountain range. It is a high altitude desert, experiencing little rainfall. The local culture is similar to Tibetan culture, and the local language is Ladakhi, which is similar to Tibetan. The region is known for its beautiful and remote Buddhist monasteries. The Indus river, after which India is named, flows down through Ladakh.</span></p>
@@ -99,7 +177,7 @@
       <p class="c10"><span class="c13">The route splits naturally into 9 days, which allows you to avoid doing multiple 5000 m passes in 1 day, to stop at the major towns with the most amenity, and to achieve a good acclimatisation schedule. It is possible to do the route in fewer days, but would require less acclimatisation, and may require combining high passes. Additionally, you could take more days, but it may be hard to divide the route well. If you want to take more than 9 days of riding, I would consider using the same 9 day schedule, but just taking more rest days.</span></p>
       <p class="c3 c28"><span class="c13"></span></p>
       <a id="t.a77c4eb3651aac2d9fc068ab7c2ae5e8a72b1b88"></a><a id="t.0"></a>
-	  <div class="table-container">
+	  <div class="table-container" style="justify-content: left;">
       <table class="c42">
          <tr class="c29">
             <td class="c20" colspan="1" rowspan="1">
@@ -401,13 +479,13 @@
       <p class="c2"><span class="c13"></span></p>
       <p class="c10"><span class="c13">The road is primarily asphalt of varying quality, however it has an extended unpaved section from Zing Zing Bar to Pang. The entire road is doable in a 2wd vehicle with low clearance and is completed easily with a gravel bike. I used 38 mm Marathon Schwalbe tires and had no difficulty.</span></p>
       <p class="c2"><span class="c13"></span></p>
-      <p class="c3"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 723.90px; height: 423.43px;"><img alt="" src="images/image24.png" style="width: 723.90px; height: 423.43px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p>
+      <p class="c3"><img alt="" src="images/image24.png"</p>
       <p class="c3"><span class="c13">Elevation Profile of the Manali Highway (devilonwheels.com)</span></p>
       <p class="c3 c28"><span class="c13"></span></p>
-      <p class="c3"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 360.50px; height: 636.11px;"><img alt="" src="images/image36.png" style="width: 360.50px; height: 636.11px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p>
+      <p class="c3"><img alt="" src="images/image36.png" style="width: 400px; height: 800px"></p>
       <p class="c3"><span class="c13">Map view of the Manali Highway (realworldadventures.com)</span></p>
       <p class="c2"><span class="c9"></span></p>
-      <h2 class="c22" id="h.5lnqmm5um13g"><span class="c43">Transport</span></h2>
+      <h2 class="c22" id="transport"><span class="c43">Transport</span></h2>
       <p class="c10"><span class="c13">Land transport is required as the closest airport to Manali is small and does not do commercial flights. If you are a local you may be able to work out how to book a flight here, but as far as I am aware it isn&rsquo;t possible. </span></p>
       <p class="c2"><span class="c13"></span></p>
       <p class="c10"><span class="c13">The highway from Delhi to Manali is long and subject to many delays. We booked a private taxi and expected it to take 12 hours. However, due to farmer protests blocking the highway and changing our route, a detour due to road works, and then torrential rain that was so heavy we had to pull over, after 14 hours we were still nowhere near Manali, and pulled into a town earlier to sleep. Ultimately it took 17 hours of driving over 1.5 days.</span></p>
@@ -420,9 +498,9 @@
       <p class="c2"><span class="c13"></span></p>
       <p class="c10"><span class="c13">Visit Naveen at Himalayan Bike Bar in Manali before starting the trip. He is a local legend and has great beta on the route and can help with anything.</span></p>
       <p class="c2"><span class="c13"></span></p>
-      <p class="c3"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 326.16px; height: 433.50px;"><img alt="" src="images/image14.png" style="width: 326.16px; height: 433.50px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p>
+      <p class="c3"><img alt="" src="images/image14.png" style="width: 326.16px; height: 433.50px"></p>
       <p class="c3"><span>Naveen at the Himalayan Bike Bar</span></p>
-      <h2 class="c22" id="h.mn9fo6fkugqi"><span class="c43">Time of Year and Weather</span></h2>
+      <h2 class="c22" id="time"><span class="c43">Time of Year and Weather</span></h2>
       <p class="c10"><span class="c13">The Manali Highway is not open year round. The road usually opens on the first week of May, but can be delayed by weather. In 2023, the road opened early, but then had to be closed due to snowfall. The season typically ends in October due to snowfall, which will not be cleared for 6 months.</span></p>
       <p class="c2"><span class="c13"></span></p>
       <p class="c10"><span class="c13">Rohtang Pass does not open until later in the year, and will need to be bypassed with the tunnel if you are too early. In 2023 it opened June 14. Before the tunnel was built, the pass would be cleared when the road was opened, but now it takes an extra month before work is complete. Older blogs mention that Rohtang pass opens at the same time as the Manali Highway, but this is no longer true.</span></p>
@@ -431,16 +509,16 @@
       <p class="c2"><span class="c13"></span></p>
       <p class="c10"><span class="c13">Ladakh is a desert and experiences very little rainfall. There are freak rain events, and your preparation should consider this, but it is unlikely you will cycle in heavy rain during the dry season.</span></p>
       <p class="c2"><span class="c13"></span></p>
-      <p class="c3"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 484.94px; height: 362.27px;"><img alt="" src="images/image51.png" style="width: 484.94px; height: 362.27px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p>
+      <p class="c3"><img alt="" src="images/image51.png"></p>
       <p class="c3"><span class="c13">The weather is so hot and unprotected that we would often stop and rest in the shade from parked trucks</span></p>
       <p class="c2"><span class="c9"></span></p>
-      <h2 class="c22" id="h.5jjsenimxvru"><span class="c43">Phone Signal and Electronics</span></h2>
+      <h2 class="c22" id="phone"><span class="c43">Phone Signal and Electronics</span></h2>
       <p class="c10"><span class="c13">The main Indian prepaid network providers will work until Jispa (day 3). From here, there is no signal for any prepaid provider. Post paid SIM cards are only available to Indian citizens, however we knew of some foreigners who managed to get one in Leh. We were unable to buy a post paid SIM card in Delhi or Manali and were left without reception for the last 7 days of the trip. Do not rely on phone signal from Jispa to Leh.</span></p>
       <p class="c2"><span class="c13"></span></p>
       <p class="c10"><span class="c13">Wifi is not available between Jispa and Leh. Satellite phones are illegal, but we brought one anyway. Drones are also illegal but we saw a few people flying them around. I wouldn&rsquo;t bring a drone as they&rsquo;re much more conspicuous than a satellite phone.</span></p>
       <p class="c2"><span class="c13"></span></p>
       <p class="c10"><span class="c13">Mains power is unavailable from Jispa. There are generally 12 V solar systems that have been rigged up and can be used to charge phones or devices, but you will have to pay for them.</span></p>
-      <h2 class="c22" id="h.1xq7q3wh46s2"><span class="c43">Costs and Expenses</span></h2>
+      <h2 class="c22" id="cost"><span class="c43">Costs and Expenses</span></h2>
       <p class="c10"><span class="c13">The trip is not expensive, and costs vary significantly depending on personal preference. The cheapest way to do the trip would be to camp and to cook your own food. I never cooked, and tried to stay in decent accommodation where possible, and still found the trip to be cheap.</span></p>
       <p class="c2"><span class="c13"></span></p>
       <p class="c10"><span class="c13">Meals would cost 150-500 INR depending on location. Accommodation costs varied with quality and remoteness, and we spent between 500 and 1500 INR per person per night. Snacks were more expensive the further from town you were, but were still Indian prices.</span></p>
@@ -455,9 +533,9 @@
       <p class="c2"><span class="c13"></span></p>
       <p class="c10"><span class="c13">I brought enough cash to spend 4000 INR per day accounting for the possibility of an emergency. It was way too much, and I ended up spending closer to 2000 INR per day. I was not careful about my spending and you could easily spend less if you stick to a budget.</span></p>
       <p class="c2"><span class="c13"></span></p>
-      <p class="c3"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 586.22px; height: 441.08px;"><img alt="" src="images/image33.png" style="width: 586.22px; height: 441.08px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p>
+      <p class="c3"><img alt="" src="images/image33.png"></p>
       <p class="c3"><span class="c13">Our group of cyclists at a nice restaurant</span></p>
-      <h2 class="c22" id="h.56bdo59ie7vy"><span class="c43">Gear</span></h2>
+      <h2 class="c22" id="gear"><span class="c43">Equipment Considerations</span></h2>
       <p class="c10"><span class="c13">There are varying bikepacking gear schools of thought. I believe in being as minimal as possible, and doubly so when in the Himalayas due to the extreme amounts of elevation and difficulties at altitude. Any equipment that is not absolutely required to complete the journey will make you more likely to fail due to the energy exerted in carrying it. However, there were cyclists with many different schools of thought on the trail, most of whom brought more gear than me, and a handful who were able to bring less. My gear list represents my own opinion on the optimal way to complete the route, and it was successful for me.</span></p>
       <p class="c2"><span class="c13"></span></p>
       <p class="c10"><span class="c13">There are a few unique bikepacking considerations for the Manali Highway compared to other cycling routes. We had to specifically consider:</span></p>
@@ -478,7 +556,7 @@
       <p class="c2"><span class="c13"></span></p>
       <p class="c10"><span class="c13">The sun was scorching, and I was very happy to have my long sleeve sun hoodie for sun protection. You need as much sun protection as possible; the high altitude, combined with the sun reflecting off the snow at high passes, will burn you to a crisp. My friend did not bring good quality sunglasses and found his eyes becoming fatigued through the snowy sections. Lots of sunscreen is also necessary. I used Oakley Plazma sunglasses with the deep water solo lens (approx 8 % VLT) and had no issues with my vision. Bring a hat.</span></p>
       <p class="c2"><span class="c13"></span></p>
-      <p class="c3"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 247.50px; height: 328.41px;"><img alt="" src="images/image4.png" style="width: 247.50px; height: 328.41px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p>
+      <p class="c3"><img alt="" src="images/image4.png"  style="width: 326.16px; height: 433.50px"></p>
       <p class="c3"><span class="c13">A photo of my leg tan line after the trip</span></p>
       <p class="c2"><span class="c13"></span></p>
       <p class="c10"><span class="c13">I wore a buff over my mouth to manage the sun, and to manage dust. It was typically too hot and steep to wear the buff when climbing, but it was useful when a truck came past and would blast us with exhaust fumes, or kick up some dust into the air. Buffs are standard fare for dusty and high altitude environments.</span></p>
@@ -497,10 +575,10 @@
       <p class="c2"><span class="c13"></span></p>
       <p class="c10"><span class="c13">There are no bike repair points on the route, however if something can be rigged together there will be savvy locals who could help out. You will not be able to buy any bike specific spares, such as a tube or a chain, so you need to bring everything that you might need. In the event of a total bike breakdown, you could likely ask someone for a lift to the nearest town and would not be completely stranded. </span></p>
       <p class="c2"><span class="c13"></span></p>
-      <p class="c3"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 677.54px; height: 252.28px;"><img alt="" src="images/image25.png" style="width: 917.10px; height: 691.91px; margin-left: -174.90px; margin-top: -323.09px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p>
+      <p class="c3"><img alt="" src="images/image25.png"></p>
       <p class="c3"><span class="c13">My loaded gear setup (left) and my friend&rsquo;s (right)</span></p>
       <p class="c2"><span class="c13"></span></p>
-      <h2 class="c27" id="h.wirlscxyixgb"><span class="c56">Gear List</span></h2>
+      <h2 class="c27" id="gearlist"><span class="c56">Gear List</span></h2>
       <p class="c10"><span class="c13">Every item I brought is listed below. My total gear weight was about 9 kg.</span></p>
       <p class="c2"><span class="c9"></span></p>
       <a id="t.3fe18e3bef2018a674774d5573f0051c3dc882c4"></a><a id="t.1"></a>
@@ -2184,7 +2262,7 @@
       <p class="c2"><span class="c9"></span></p>
       <h2 class="c22" id="h.omjr885i8hkh"><span class="c43">Itinerary</span></h2>
       <p class="c10"><span>I have included the duration of the day according to my records. This duration includes lunch stops, photos, and rests, so it&rsquo;s not perfectly indicative of the route difficulty or length. </span></p>
-      <h2 class="c27" id="h.yn56c8erqgog"><span class="c56">Day 1) Manali to Mardhi</span></h2>
+      <h2 class="c27" id="day1"><span class="c56">Day 1) Manali to Mardhi</span></h2>
       <p class="c10"><a class="c9" href="https://www.strava.com/activities/9275335914">https://www.strava.com/activities/9275335914</span></p>
       <a id="t.af8473bcffa7326a3b9f1a2f0b15d9ffd696f84f"></a><a id="t.2"></a>
       <div class="table-container"><table class="c42">
@@ -2229,9 +2307,9 @@
             </td>
          </tr>
       </table></div>
-      <p class="c3"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 94.67px;"><img alt="" src="images/image1.png" style="width: 624.00px; height: 94.67px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p>
+      <p class="c3"><img alt="" src="images/image1.png" ></p>
 	  <p class="c3"><span class="c13">Route Data and Elevation Profile</span></p>
-      <p class="c3"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 615.44px; height: 461.32px;"><img alt="" src="images/image38.png" style="width: 615.44px; height: 461.32px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p>
+      <p class="c3"><img alt="" src="images/image38.png" ></p>
       <p class="c3"><span class="c13">Leaving Manali</span></p>
       <p class="c2"><span class="c13"></span></p>
       <p class="c10"><span>Before leaving, ensure that Rohtang Pass is open and has been cleared. Since opening the Atal Tunnel in 2020, this road is only used by tourists going to see the </span><span class="c13">snow, and is not cleared until much later in the season. Old blogs and internet resources will suggest Rohtang Pass opens in May, but this information is out of date. It opened on 14 June in 2023 when we were there. For information we called the local bike shop.</span></p>
@@ -2240,7 +2318,7 @@
       <p class="c2"><span class="c13"></span></p>
       <p class="c10"><span class="c13">The route leaves Manali via the main road. This road is quite busy, but is generally slow moving. Once you reach the turn off at Palchan, there will be no more shops until reaching Mardhi. The road from Palchan to Mardhi is quieter, but will have tourist traffic in the morning and evening from people travelling to the pass. </span></p>
       <p class="c2"><span class="c13"></span></p>
-      <p class="c3"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 575.50px; height: 431.63px;"><img alt="" src="images/image52.png" style="width: 575.50px; height: 431.63px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p>
+      <p class="c3"><img alt="" src="images/image52.png" ></p>
       <p class="c3"><span class="c13">Looking down towards Palchan</span></p>
       <p class="c2"><span class="c13"></span></p>
       <p class="c10"><span class="c13">There is a checkpoint but we were able to cycle through. Tourists in cars / buses need permits to get to Rohtang Pass but if you&rsquo;re on a bike they should just let you through. We had no trouble here.</span></p>
@@ -2249,12 +2327,12 @@
       <p class="c2"><span class="c13"></span></p>
       <p class="c10"><span class="c13">We used our military contacts to stay at the army base, so I can&rsquo;t comment on the quality of the Dhabas. However, it looked fine and the food was good.</span></p>
       <p class="c2"><span class="c13"></span></p>
-      <p class="c3"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 572.00px; height: 428.74px;"><img alt="" src="images/image46.png" style="width: 572.00px; height: 428.74px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p>
+      <p class="c3"><img alt="" src="images/image46.png" ></p>
       <p class="c3"><span class="c13">The Dhabas at Mardhi, looking up to Rohtang Pass</span></p>
       <p class="c3 c28"><span class="c13"></span></p>
-      <p class="c3"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 538.50px; height: 403.88px;"><img alt="" src="images/image39.png" style="width: 538.50px; height: 403.88px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p>
+      <p class="c3"><img alt="" src="images/image39.png" ></p>
       <p class="c3"><span class="c13">End of the first day</span></p>
-      <h2 class="c27" id="h.pod3bxeyxlil"><span class="c56">Day 2) Mardhi to Sissu via Rohtang La</span></h2>
+      <h2 class="c27" id="day2"><span class="c56">Day 2) Mardhi to Sissu via Rohtang La</span></h2>
       <p class="c10"><a class="c9" href="https://www.strava.com/activities/9275338961/overview">https://www.strava.com/activities/9275338961/overview</span></p>
       <a id="t.cc157406b9a1d4d5eeb6a391650b21c7baf0531b"></a><a id="t.3"></a>
       <div class="table-container"><table class="c42">
@@ -2300,7 +2378,7 @@
          </tr>
       </table></div>
       <p class="c2"><span class="c9"></span></p>
-      <p class="c3"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 89.33px;"><img alt="" src="images/image13.png" style="width: 624.00px; height: 89.33px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p>
+      <p class="c3"><img alt="" src="images/image13.png" ></p>
 	  <p class="c3"><span class="c13">Route Data and Elevation Profile</span></p>
       <p class="c2"><span class="c9"></span></p>
       <p class="c10"><span class="c13">If you leave early, it may be possible to beat the tourist traffic at the pass. We left at about 9am and found the traffic annoying, but it wasn&rsquo;t difficult or dangerous.</span></p>
@@ -2309,10 +2387,10 @@
       <p class="c2"><span class="c13"></span></p>
       <p class="c10"><span class="c13">The road quality becomes worse as you get higher. There are some chokepoints which can cause traffic to back up a long way. It is easy to go around all the cars on the bike and avoid the traffic. Near the top, the road becomes a carpark as everyone pulls over to walk around the snow and ice. There was nowhere to buy food up here.</span></p>
       <p class="c2"><span class="c13"></span></p>
-      <p class="c3"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 616.25px; height: 462.19px;"><img alt="" src="images/image43.png" style="width: 616.25px; height: 462.19px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p>
+      <p class="c3"><img alt="" src="images/image43.png" ></p>
       <p class="c3"><span class="c13">View looking over Rohtang Pass</span></p>
       <p class="c3 c28"><span class="c13"></span></p>
-      <p class="c3"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 591.68px; height: 444.16px;"><img alt="" src="images/image3.png" style="width: 591.68px; height: 444.16px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p>
+      <p class="c3"><img alt="" src="images/image3.png" ></p>
       <p class="c3"><span class="c13">Rohtang Pass</span></p>
       <p class="c2"><span class="c13"></span></p>
       <p class="c10"><span class="c13">The descent from the pass drops about 800 m over 15 km. It gets very cold to descend that quickly for so long, and moreso if it rains. There is food available at Dhabas at the bottom of the descent.</span></p>
@@ -2323,10 +2401,10 @@
       <p class="c2"><span class="c13"></span></p>
       <p class="c10"><span class="c13">We took a rest day here due to illness.</span></p>
       <p class="c2"><span class="c13"></span></p>
-      <p class="c3"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 640.09px; height: 478.99px;"><img alt="" src="images/image47.png" style="width: 640.09px; height: 478.99px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p>
+      <p class="c3"><img alt="" src="images/image47.png" ></p>
       <p class="c3"><span class="c13">View from Sissu</span></p>
       <p class="c2"><span class="c13"></span></p>
-      <h2 class="c27" id="h.xby0id5ikydy"><span class="c56">Day 3) Sissu to Jispa</span></h2>
+      <h2 class="c27" id="day3"><span class="c56">Day 3) Sissu to Jispa</span></h2>
       <p class="c10"><a class="c9" href="https://www.strava.com/activities/9350031906">https://www.strava.com/activities/9350031906</span></p>
       <a id="t.8b187c722fda561adf880edfff63512f77b58387"></a><a id="t.4"></a>
       <div class="table-container"><table class="c42">
@@ -2371,7 +2449,7 @@
             </td>
          </tr>
       </table></div>
-      <p class="c3"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 94.67px;"><img alt="" src="images/image28.png" style="width: 624.00px; height: 94.67px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p>
+      <p class="c3"><img alt="" src="images/image28.png" ></p>
 	  <p class="c3"><span class="c13">Route Data and Elevation Profile</span></p>
       <p class="c2"><span class="c13"></span></p>
       <p class="c10"><span class="c13">This section is along high quality well trafficked roads with good amenities. There are many hotels and towns along the way. The road is busy with tourists, but not enough to have major traffic. This is an easy day.</span></p>
@@ -2380,16 +2458,16 @@
       <p class="c2"><span class="c13"></span></p>
       <p class="c10"><span class="c13">Jispa will be the last town with electricity and phone signal.</span></p>
       <p class="c2"><span class="c13"></span></p>
-      <p class="c3"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 648.30px; height: 487.04px;"><img alt="" src="images/image55.png" style="width: 648.30px; height: 487.04px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p>
+      <p class="c3"><img alt="" src="images/image55.png" ></p>
       <p class="c3"><span class="c13">View from the road heading to Jispa</span></p>
       <p class="c3 c28"><span class="c13"></span></p>
-      <p class="c3"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 424.92px; height: 568.01px;"><img alt="" src="images/image29.png" style="width: 424.92px; height: 568.01px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p>
+      <p class="c3"><img alt="" src="images/image29.png" ></p>
       <p class="c3"><span class="c13">Looking towards Zing Zing Bar from our hotel</span></p>
       <p class="c3 c28"><span class="c13"></span></p>
-      <p class="c3"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 420.35px; height: 314.97px;"><img alt="" src="images/image34.png" style="width: 420.35px; height: 314.97px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p>
+      <p class="c3"><img alt="" src="images/image34.png" ></p>
       <p class="c3"><span class="c13">The best hotel name</span></p>
       <p class="c2"><span class="c13"></span></p>
-      <h2 class="c27" id="h.g3u45wftb608"><span class="c56">Day 4) Jispa to Zing Zing Bar</span></h2>
+      <h2 class="c27" id="day4"><span class="c56">Day 4) Jispa to Zing Zing Bar</span></h2>
       <p class="c10"><a class="c9" href="https://www.strava.com/activities/9350038173">https://www.strava.com/activities/9350038173</span></p>
       <a id="t.dfb42d6487e556edd5503523f6cf4f031cc1138f"></a><a id="t.5"></a>
       <div class="table-container"><table class="c42">
@@ -2434,7 +2512,7 @@
             </td>
          </tr>
       </table></div>
-      <p class="c3"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 100.00px;"><img alt="" src="images/image30.png" style="width: 624.00px; height: 100.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p>
+      <p class="c3"><img alt="" src="images/image30.png" ></p>
 	  <p class="c3"><span class="c13">Route Data and Elevation Profile</span></p>
       <p class="c2"><span class="c13"></span></p>
       <p class="c10"><span class="c13">Riding out of Jispa you reach a well built bridge crossing the Jankar Nala. From here it is a consistent upwards climb for the next 1.5 days.</span></p>
@@ -2443,16 +2521,17 @@
       <p class="c2"><span class="c13"></span></p>
       <p class="c10"><span class="c13">From Patseo, the road follows the valley floor, passing a military base, then begins a slow ascent. In 2023, there were several sections where the road had been washed away and was being rebuilt. This was the only point on the ride that I had to get my feet wet as we pushed the bikes through the water. The road continues upwards through several work camps who are building infrastructure.</span></p>
       <p class="c2"><span class="c13"></span></p>
-      <p class="c3"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 658.62px; height: 314.84px;"><img alt="" src="images/image22.png" style="width: 658.62px; height: 314.84px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p>
+      <p class="c3"><img alt="" src="images/image22.png" ></p>
       <p class="c3"><span class="c13">The only river crossing of the trip</span></p>
       <p class="c2"><span class="c13"></span></p>
       <p class="c10"><span class="c13">Eventually you reach a town marked by signs as Zing Zing Bar, consisting of a military base and a small Dhaba. Don&rsquo;t stop here, the actual Zing Zing Bar is further along up the hill. </span></p>
       <p class="c2"><span class="c13"></span></p>
       <p class="c10"><span class="c13">The real Zing Zing Bar has several stone buildings and temporary tents setup. There are several accommodation options and more are being built. </span></p>
       <p class="c2"><span class="c13"></span></p>
-      <p class="c3"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 328.00px; height: 247.51px;"><img alt="" src="images/image5.png" style="width: 328.00px; height: 247.51px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 333.00px; height: 247.81px;"><img alt="" src="images/image19.png" style="width: 333.00px; height: 247.81px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p>
+      <p class="c3"><img alt="" src="images/image5.png" ></p>
+      <p class="c3"><img alt="" src="images/image19.png" ></p>
       <p class="c3"><span class="c13">Zing Zing Bar Accommodation</span></p>
-      <h2 class="c27" id="h.i9vtv89guln"><span class="c56">Day 5) Zing Zing Bar to Sarchu via Baralacha La</span></h2>
+      <h2 class="c27" id="day5"><span class="c56">Day 5) Zing Zing Bar to Sarchu via Baralacha La</span></h2>
       <p class="c10"><a class="c9" href="https://www.strava.com/activities/9350044653">https://www.strava.com/activities/9350044653</span></p>
       <a id="t.a2fcd772869f0b00eb90ebd0ce3683fc6708cc23"></a><a id="t.6"></a>
       <div class="table-container"><table class="c42">
@@ -2498,33 +2577,34 @@
          </tr>
       </table></div>
       <p class="c2"><span class="c13"></span></p>
-      <p class="c3"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 93.33px;"><img alt="" src="images/image49.png" style="width: 624.00px; height: 93.33px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p>
+      <p class="c3"><img alt="" src="images/image49.png" ></p>
 	  <p class="c3"><span class="c13">Route Data and Elevation Profile</span></p>
       <p class="c10"><span class="c13">The route starts with the 700 m climb to Baralacha La. Shortly after leaving Zing Zing Bar, you reach the snow line. If the sun is out, this area is scorching. Ensure you have adequate sunscreen and sun protecting clothing on this section. The road quality deteriorates as you get higher, with some sections having avalanche and rock fall risk. You should move quickly through avalanche and rock fall terrain, and ride away from the cliff face.</span></p>
       <p class="c2"><span class="c13"></span></p>
-      <p class="c3"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 601.01px; height: 452.07px;"><img alt="" src="images/image50.png" style="width: 601.01px; height: 452.07px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p>
+      <p class="c3"><img alt="" src="images/image50.png" ></p>
       <p class="c3"><span class="c13">Rock fall and snow burn</span></p>
       <p class="c2"><span class="c13"></span></p>
       <p class="c10"><span class="c13">The top of the pass has a Stupa but there is no other shade. If it is hot, it is a bad place to rest. Continuing onwards down the next hill reaches a temporary settlement where you can rest and buy water and lunch. After the settlements, the road quality improves.</span></p>
       <p class="c2"><span class="c13"></span></p>
       <p class="c10"><span class="c13">Baralacha La marks a significant drop in traffic. Day trippers from Manali do not continue past this pass, and from here the only traffic is typically military vehicles, goods trucks, and tourists travelling all the way to Leh. The riding is much more pleasant. Few people live here due to the closure of the road during winter.</span></p>
       <p class="c2"><span class="c13"></span></p>
-      <p class="c3"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 587.96px; height: 443.09px;"><img alt="" src="images/image16.png" style="width: 587.96px; height: 443.09px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p>
+      <p class="c3"><img alt="" src="images/image16.png" ></p>
       <p class="c3"><span class="c13">Baralacha La</span></p>
       <p class="c2"><span class="c13"></span></p>
       <p class="c10"><span class="c13">The road continues descending for about 30 km. It is a great ride with a brand new style of landscape. The road passes some camp sites which can be stopped at, but it makes more sense to roll all the way downhill to Sarchu. Sarchu is a major town, and is the last stop before a long empty stretch of road.</span></p>
       <p class="c2"><span class="c13"></span></p>
-      <p class="c3"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 576.44px; height: 432.08px;"><img alt="" src="images/image45.png" style="width: 576.44px; height: 432.08px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p>
+      <p class="c3"><img alt="" src="images/image45.png" ></p>
       <p class="c3"><span class="c13">New landscape unlocked</span></p>
       <p class="c2"><span class="c13"></span></p>
       <p class="c10"><span>Just before entering Sarchu there is a military checkpoint as you cross the border from Himachal Pradesh </span><span>into</span><span class="c13">&nbsp;Ladakh. You will need to show your passport and have your name marked down here.</span></p>
       <p class="c2"><span class="c13"></span></p>
       <p class="c10"><span class="c13">Sarchu has multiple accommodation options of varying price and quality. It is a good place to take a rest day. We took our second rest day here at the Friend Restaurant, a small tea house run by a kind local woman.</span></p>
       <p class="c2"><span class="c13"></span></p>
-      <p class="c3"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 340.18px; height: 191.28px;"><img alt="" src="images/image17.png" style="width: 340.18px; height: 191.28px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 341.50px; height: 192.22px;"><img alt="" src="images/image18.png" style="width: 341.50px; height: 192.22px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p>
+      <p class="c3"><img alt="" src="images/image17.png" ></p>
+      <p class="c3"><img alt="" src="images/image18.png" ></p>
       <p class="c3"><span class="c13">The Friend Restaurant was loaded with snacks and made a good rest day spot. The room even had a western toilet</span></p>
       <p class="c2"><span class="c13"></span></p>
-      <h2 class="c27" id="h.fu381p8uuvkh"><span class="c56">Day 6) Sarchu to Whiskey Nala via Nakee La</span></h2>
+      <h2 class="c27" id="day6"><span class="c56">Day 6) Sarchu to Whiskey Nala via Nakee La</span></h2>
       <p class="c10"><a class="c9" href="https://www.strava.com/activities/9350050255">https://www.strava.com/activities/9350050255</span></p>
       <a id="t.0d80fd59d3e8ed38cce4239c210bc2f8fa93cb14"></a><a id="t.7"></a>
       <div class="table-container"><table class="c42">
@@ -2570,7 +2650,7 @@
          </tr>
       </table></div>
       <p class="c2"><span class="c13"></span></p>
-      <p class="c3"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 93.33px;"><img alt="" src="images/image42.png" style="width: 624.00px; height: 93.33px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p>
+      <p class="c3"><img alt="" src="images/image42.png" ></p>
 	  <p class="c3"><span class="c13">Route Data and Elevation Profile</span></p>
       <p class="c10"><span class="c13">There are no Dhabas between Sarchu and Whiskey Nala. All food and water must be stocked up in Sarchu. This section is very hot and exposed and will require 3 L + of water. I found this day to be the hardest of the trip due to the heat and the climbing.</span></p>
       <p class="c2"><span class="c13"></span></p>
@@ -2578,13 +2658,13 @@
       <p class="c2"><span class="c13"></span></p>
       <p class="c10"><span class="c13">Eventually you reach the base of the Gata Loops. The Gata Loops are a mythological climb that is written about on every blog, but it is all a bit exaggerated. There are 21 switchbacks to reach ~ 4700 m elevation, and then another slow climb to reach the ~ 5000 m pass. It is spectacular, and very difficult at high altitude. There is no shade from the start of the Gata loops to Whiskey Nala, so be wary of dehydration. </span></p>
       <p class="c2"><span class="c13"></span></p>
-      <p class="c3"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 601.85px; height: 453.75px;"><img alt="" src="images/image11.png" style="width: 601.85px; height: 453.75px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p>
+      <p class="c3"><img alt="" src="images/image11.png" ></p>
       <p class="c3"><span class="c13">The Gata Loops</span></p>
       <p class="c3 c28"><span class="c13"></span></p>
-      <p class="c3"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 608.30px; height: 455.72px;"><img alt="" src="images/image35.png" style="width: 608.30px; height: 455.72px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p>
+      <p class="c3"><img alt="" src="images/image35.png" ></p>
       <p class="c3"><span class="c13">Progressive at 5000 m</span></p>
       <p class="c3 c28"><span class="c13"></span></p>
-      <p class="c3"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 616.63px; height: 461.69px;"><img alt="" src="images/image48.png" style="width: 616.63px; height: 461.69px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p>
+      <p class="c3"><img alt="" src="images/image48.png" ></p>
       <p class="c3"><span class="c13">Desperate for shade</span></p>
       <p class="c2"><span class="c13"></span></p>
       <p class="c10"><span>The road is good quality, and there is rarely traffic. However, towards the pass the road </span><span>is narrow</span><span class="c13">, and we reached a traffic jam where some trucks could not pass each other. It was manageable to ride around them.</span></p>
@@ -2595,9 +2675,9 @@
       <p class="c2"><span class="c13"></span></p>
       <p class="c10"><span>Whiskey Nala does not have much </span><span>amenity</span><span class="c13">&nbsp;and was my least favourite place to camp. A route variation could be to continue over Lachung La and roll down to Pang at about 4500 m. This would add 4 + hours to the day and would be very difficult, but would be possible if you reached Whiskey Nala early and still had energy to continue. There are no settlements between Whiskey Nala and Pang, so do not continue unless you can make it there. Pang would be a much nicer place to stay.</span></p>
       <p class="c2"><span class="c13"></span></p>
-      <p class="c3"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 595.00px; height: 334.88px;"><img alt="" src="images/image53.png" style="width: 595.00px; height: 334.88px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p>
+      <p class="c3"><img alt="" src="images/image53.png" ></p>
       <p class="c3"><span class="c13">Whiskey Nala Accommodation</span></p>
-      <h2 class="c27" id="h.804carjna9my"><span class="c56">Day 7) Whiskey Nala to Debring via Lachung La</span></h2>
+      <h2 class="c27" id="day7"><span class="c56">Day 7) Whiskey Nala to Debring via Lachung La</span></h2>
       <p class="c10"><a class="c9" href="https://www.strava.com/activities/9350061480">https://www.strava.com/activities/9350061480</span></p>
       <a id="t.73ffec9de98922f78ea5ce0ebf3eec598ff4e973"></a><a id="t.8"></a>
       <div class="table-container"><table class="c42">
@@ -2643,7 +2723,7 @@
          </tr>
       </table></div>
       <p class="c2"><span class="c13"></span></p>
-      <p class="c3"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 98.67px;"><img alt="" src="images/image37.png" style="width: 624.00px; height: 98.67px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p>
+      <p class="c3"><img alt="" src="images/image37.png" ></p>
 	  <p class="c3"><span class="c13">Route Data and Elevation Profile</span></p>
       <p class="c10"><span class="c13">There is no food or water available between Whiskey Nala and Pang. </span></p>
       <p class="c2"><span class="c13"></span></p>
@@ -2651,22 +2731,22 @@
       <p class="c2"><span class="c13"></span></p>
       <p class="c10"><span class="c13">The day starts with an ascent up a dirt road to Lachung La, a 5100 m pass. This section has comparable traffic to the previous few days.</span></p>
       <p class="c2"><span class="c13"></span></p>
-      <p class="c3"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 572.73px; height: 447.99px;"><img alt="" src="images/image6.png" style="width: 572.73px; height: 762.74px; margin-left: 0.00px; margin-top: -201.27px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p>
+      <p class="c3"><img alt="" src="images/image6.png" style="width: 326.16px; height: 433.50px"></span></p>
       <p class="c3"><span class="c13">Lachung La</span></p>
       <p class="c2"><span class="c13"></span></p>
       <p class="c10"><span class="c13">Once at the pass, the descent is one of the most spectacular sections of the trip. The road follows a river down a narrow valley, with the neighbouring mountains towering 1500 m overhead. The road winds its way through some strange cliffs and incredible terrain. The road is unpaved and potholed.</span></p>
       <p class="c2"><span class="c13"></span></p>
-      <p class="c3"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 612.00px; height: 458.72px;"><img alt="" src="images/image21.png" style="width: 612.00px; height: 458.72px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p>
+      <p class="c3"><img alt="" src="images/image21.png" ></p>
       <p class="c3"><span class="c13">Can&rsquo;t park there mate</span></p>
       <p class="c3 c28"><span class="c13"></span></p>
-      <p class="c3"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 607.00px; height: 455.49px;"><img alt="" src="images/image31.png" style="width: 607.00px; height: 455.49px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p>
+      <p class="c3"><img alt="" src="images/image31.png" ></p>
       <p class="c3"><span class="c13">One of my favourite photos, capturing the hostile alien landscape</span></p>
       <p class="c2"><span class="c13"></span></p>
       <p class="c10"><span class="c13">Eventually you reach Pang, near a military base. There are several Dhabas and accommodation available here, with the first permanent buildings since Sarchu. </span></p>
       <p class="c2"><span class="c13"></span></p>
       <p class="c10"><span class="c13">After Pang, there is a steep and hot climb, before reaching the More Plains. The road quality improves significantly here. The More Plains are a high altitude plateau, flanked by mountains on every side. I don&rsquo;t think there are plains like this anywhere else in the Himalayas.</span></p>
       <p class="c2"><span class="c13"></span></p>
-      <p class="c3"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 646.33px; height: 483.46px;"><img alt="" src="images/image26.png" style="width: 646.33px; height: 483.46px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p>
+      <p class="c3"><img alt="" src="images/image26.png" ></p>
       <p class="c3"><span class="c13">More plains. I am in this picture hiding from the sun</span></p>
       <p class="c2"><span class="c13"></span></p>
       <p class="c10"><span class="c13">The wind can be quite strong on the plains, and my friend had issues cycling into the headwind. It can be slow. I was thankful for my slick tires here.</span></p>
@@ -2675,9 +2755,9 @@
       <p class="c2"><span class="c13"></span></p>
       <p class="c10"><span class="c13">This road continues through some smaller settlements until reaching Debring, the largest settlement in the area and the closest to Tanglang La. There are a few permanent buildings, with a particularly nice hotel at the end of the town on the right.</span></p>
       <p class="c2"><span class="c13"></span></p>
-      <p class="c3"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 637.50px; height: 478.13px;"><img alt="" src="images/image8.png" style="width: 637.50px; height: 478.13px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p>
+      <p class="c3"><img alt="" src="images/image8.png" ></p>
       <p class="c3"><span class="c13">Stay at this hotel</span></p>
-      <h2 class="c27" id="h.rwypfutvuj0x"><span class="c56">Day 8) Debring to Upshii / Lato via Tanglang La</span></h2>
+      <h2 class="c27" id="day8"><span class="c56">Day 8) Debring to Upshii / Lato via Tanglang La</span></h2>
       <p class="c10"><a class="c9" href="https://www.strava.com/activities/9350071398">https://www.strava.com/activities/9350071398</span></p>
       <a id="t.240ee81fd0e5d5079fbc0960fdcc0080660e886d"></a><a id="t.9"></a>
       <div class="table-container"><table class="c42">
@@ -2722,28 +2802,28 @@
             </td>
          </tr>
       </table></div>
-      <p class="c3"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 93.33px;"><img alt="" src="images/image32.png" style="width: 624.00px; height: 93.33px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p>
+      <p class="c3"><img alt="" src="images/image32.png" ></p>
 	  <p class="c3"><span class="c13">Route Data and Elevation Profile</span></p>
       <p class="c10"><span class="c13">We rode from Debring to Upshii, but if I could repeat the trip I would stop earlier at Lato. There appeared to be many nice guest house options at Lato, and it was quiet and away from the main road. Lato is in a very beautiful location, whereas Upshii is directly on the main road next to a military base, and is quite loud and busy.</span></p>
       <p class="c2"><span class="c13"></span></p>
       <p class="c10"><span class="c13">Leaving Debring you immediately start the climb to the highest pass of the trip, Tanglang La at ~5300 m. There are no Dhabas between Debring and Tanglang La so make sure you have a few hours of food and water. This is quite a hard climb due to the thin air, even though the gradient is consistent and the road quality is good.</span></p>
       <p class="c2"><span class="c13"></span></p>
-      <p class="c3"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 590.96px; height: 444.79px;"><img alt="" src="images/image27.png" style="width: 590.96px; height: 444.79px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p>
+      <p class="c3"><img alt="" src="images/image27.png" ></p>
       <p class="c3"><span class="c13">Feeling the altitude</span></p>
       <p class="c3 c28"><span class="c13"></span></p>
-      <p class="c3"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 602.34px; height: 453.22px;"><img alt="" src="images/image2.png" style="width: 602.34px; height: 453.22px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p>
+      <p class="c3"><img alt="" src="images/image2.png" ></p>
       <p class="c3"><span class="c13">Wild donkey at 5000 m</span></p>
       <p class="c3 c28"><span class="c13"></span></p>
-      <p class="c3"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 593.06px; height: 572.64px;"><img alt="" src="images/image23.png" style="width: 761.46px; height: 572.64px; margin-left: -168.40px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p>
+      <p class="c3"><img alt="" src="images/image23.png" ></p>
       <p class="c3"><span class="c13">Unbelievable, is not it?</span></p>
       <p class="c2"><span class="c13"></span></p>
       <p class="c10"><span class="c13">Once you reach Tanglang La, you roll downhill for the next 1800 m descent. Immediately over Tanglang La the road is a bit damaged by the snow and ice, but after a few km it becomes smooth, beautiful switchbacks. It is worth changing into warmer clothes at the top of Tanglang La to be prepared for the descent.</span></p>
       <p class="c2"><span class="c13"></span></p>
       <p class="c10"><span class="c13">Eventually you reach civilization, and the first few villages will have running water and electricity for the first time in a week. Continue through these villages and decide where to stop. You will meet the Indus River and Upshii, which is a full sized town. Upshii did not have Wifi in 2023, but locals will get signal if you need it.</span></p>
       <p class="c2"><span class="c13"></span></p>
-      <p class="c3"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 451.44px; height: 338.79px;"><img alt="" src="images/image44.png" style="width: 451.44px; height: 338.79px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p>
+      <p class="c3"><img alt="" src="images/image44.png" ></p>
       <p class="c3"><span class="c13">Back in civilization (Upshii)</span></p>
-      <h2 class="c27" id="h.lusu5wzglt1z"><span class="c56">Day 9) Upshii to Leh</span></h2>
+      <h2 class="c27" id="day9"><span class="c56">Day 9) Upshii to Leh</span></h2>
       <p class="c10"><a class="c9" href="https://www.strava.com/activities/9350074440">https://www.strava.com/activities/9350074440</span></p>
       <a id="t.ca21bf3ddd65b71b7ce66490df0fa7086403e522"></a><a id="t.10"></a>
       <div class="table-container"><table class="c42">
@@ -2788,24 +2868,24 @@
             </td>
          </tr>
       </table></div>
-      <p class="c3"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 92.00px;"><img alt="" src="images/image10.png" style="width: 624.00px; height: 92.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p>
+      <p class="c3"><img alt="" src="images/image10.png" ></p>
 	  <p class="c3"><span class="c13">Route Data and Elevation Profile</span></p>
       <p class="c2"><span class="c13"></span></p>
       <p class="c10"><span class="c13">Upshii to Leh is an easy day on good roads through towns. There are many places to stop for food and tea. However, the traffic can be very busy.</span></p>
       <p class="c2"><span class="c13"></span></p>
       <p class="c10"><span class="c13">It is worth exploring some of the monasteries, however we found it easier to drop gear at Leh and then catch a taxi back the following day. Hemis Monastery is nice, but is on top of a large hill.</span></p>
       <p class="c2"><span class="c13"></span></p>
-      <p class="c3"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 595.50px; height: 448.83px;"><img alt="" src="images/image40.png" style="width: 595.50px; height: 448.83px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p>
+      <p class="c3"><img alt="" src="images/image40.png" ></p>
       <p class="c3"><span class="c13">Monasteries and ice cream</span></p>
       <p class="c2"><span class="c13"></span></p>
       <p class="c10"><span class="c13">Once in Leh you are back in a major tourist town and there are many accommodation options. We stayed at the Rover&rsquo;s Den, and met many other bikepackers there. The owners were great and helped us get to the airport when we couldn&rsquo;t fit our bike boxes in a taxi. </span></p>
       <p class="c2"><span class="c13"></span></p>
-      <p class="c3"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 613.99px; height: 462.82px;"><img alt="" src="images/image12.png" style="width: 613.99px; height: 462.82px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p>
+      <p class="c3"><img alt="" src="images/image12.png" ></p>
       <p class="c3"><span class="c13">Leh, with Stok Kangri (6100 m) in the background (I have climbed it previously)</span></p>
       <p class="c3 c28"><span class="c13"></span></p>
-      <p class="c3"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 613.86px; height: 460.39px;"><img alt="" src="images/image20.png" style="width: 613.86px; height: 460.39px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p>
+      <p class="c3"><img alt="" src="images/image20.png" ></p>
       <p class="c3"><span class="c13">Leh</span></p>
-      <h2 class="c27" id="h.kqxjggvdwne1"><span class="c56">Day 10) Khardung La</span></h2>
+      <h2 class="c27" id="day10"><span class="c56">Day 10) Khardung La</span></h2>
       <p class="c10"><a class="c9" href="https://www.strava.com/activities/9350082895">https://www.strava.com/activities/9350082895</span></p>
       <a id="t.0368329afed3ef67c2e7e42092b3cb518c2f8827"></a><a id="t.11"></a>
       <div class="table-container"><table class="c42">
@@ -2850,7 +2930,7 @@
             </td>
          </tr>
       </table></div>
-      <p class="c3"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 88.00px;"><img alt="" src="images/image7.png" style="width: 624.00px; height: 88.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p>
+      <p class="c3"><img alt="" src="images/image7.png" ></p>
 	  <p class="c3"><span class="c13">Route Data and Elevation Profile</span></p>
       <p class="c2"><span class="c13"></span></p>
       <p class="c10"><span class="c13">PERMIT REQUIRED: before leaving Leh you need to get an Inner Line Permit. Ask your hotel where to get one. It should be about 500 INR.</span></p>
@@ -2867,13 +2947,13 @@
       <p class="c2"><span class="c13"></span></p>
       <p class="c10"><span class="c13">Once complete, layer up and roll back into Leh.</span></p>
       <p class="c2"><span class="c13"></span></p>
-      <p class="c3"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 580.70px; height: 436.94px;"><img alt="" src="images/image41.png" style="width: 580.70px; height: 436.94px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p>
+      <p class="c3"><img alt="" src="images/image41.png" ></p>
       <p class="c3"><span class="c13">Looking down to Leh</span></p>
       <p class="c3 c28"><span class="c13"></span></p>
-      <p class="c3"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 577.50px; height: 435.69px;"><img alt="" src="images/image15.png" style="width: 577.50px; height: 435.69px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p>
+      <p class="c3"><img alt="" src="images/image15.png" ></p>
       <p class="c3"><span class="c13">We did 20 takes and this was the best one. Fight occurring off screen</span></p>
       <p class="c3 c28"><span class="c13"></span></p>
-      <p class="c3"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 440.86px; height: 586.08px;"><img alt="" src="images/image9.png" style="width: 440.86px; height: 586.08px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p>
+      <p class="c3"><img alt="" src="images/image9.png" ></p>
       <p class="c3"><span class="c13">A lot of biking finished</span></p>
       <p class="c2"><span class="c13"></span></p>
       <p class="c2"><span class="c13"></span></p>
