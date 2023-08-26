@@ -83,6 +83,21 @@
     table-layout: fixed; /* Prevent table cells from expanding based on content */
   }
 }
+
+  .video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio (h/w * 100) */
+    overflow: hidden;
+  }
+  
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
   </style>
 	
       <meta content="text/html; charset=UTF-8" http-equiv="content-type">
@@ -156,6 +171,12 @@
 		   
 		  </ul>
 		</div>
+		<br>
+				  <div class="video-container">
+				  
+  <iframe src="https://www.youtube.com/embed/072_50wHLDQ?si=axIMcxIvsfBrrAkq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+<br>
       <h2 class="c22" id="preamble"><span class="c43">Preamble</span></h2>
       <p class="c10"><span class="c13">This guide is written to provide assistance to anyone attempting to cycle the Manali Highway. I am writing it to present information that would have been useful to me for my trip in June 2023, in order to save everyone else from trawling through outdated blogs and Reddit posts.</span></p>
       <p class="c2"><span class="c13"></span></p>
